@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Jost:wght@700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="cincecrcepng (1).png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cine Crce</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style>
+    :root {
+      --color-brand-cyan: #00E5FF;
+      --color-brand-gold: #FFD700;
+      --color-bg-dark: #050812;
+    }
+
+    html {
+      font-size: 24px;
+      /* 150% scale for rem units */
+      background-color: #050812;
+      color: white;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      html {
+        zoom: 1;
+      }
+    }
+
+    .glass-panel {
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 50px rgba(0, 229, 255, 0.2);
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
